@@ -1,0 +1,176 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    background-color: hsl(257, 40%, 49%);
+}
+
+body {
+    background: url(../images/bg-desktop.svg) no-repeat center;
+    background-size: cover;
+    min-height: 100%;
+}
+
+h1, p {
+    font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
+}
+
+h1 {
+    font-size: 35px;
+    min-width: 270px;
+    min-height: 75px;
+}
+
+#logo {
+    display: inline-block;
+    margin: 3%;
+}
+
+#logo > img {
+    width: 250px;
+    height: 50px;
+}
+
+.main {
+    width: 90%;
+    min-width: 800px;
+    height: 510px;
+    display: flex;
+    margin: 0 auto;
+    padding-bottom: 75px;
+    min-height: 100%;
+}
+
+.mockup {
+    margin-right: 30px;
+    height: 100%;
+    display: flex;
+    flex: 0 1 1440px;
+}
+
+.mockup > img {
+    max-width: 100%;
+}
+
+.text-area {
+    padding: 25px;
+    height: 100%;
+}
+
+.text-area > div {
+    margin: 25px 0;
+}
+
+#register {
+    display: block;
+    background-color: whitesmoke;
+    color: hsl(257, 40%, 49%);
+    border-radius: 55px;
+    height: 50px;
+    width: 170px;
+    padding: 10px;
+    font-size: 17px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: -1px 0 whitesmoke, 0 1px whitesmoke, 1px 0 whitesmoke, 0 -1px whitesmoke;
+    box-shadow: 2px 2px 10px #303030;
+}
+
+footer {
+    position: absolute;
+    color: whitesmoke;
+    height: 75px;
+    width: 100%;
+    bottom: 0;
+}
+
+.attribution {
+    bottom: 1%;
+    left: 1%;
+    position: absolute;
+}
+
+.attribution a {
+    color: hsl(230, 80%, 80%);
+}
+
+#social-media {
+    right: 3%;
+    bottom: 15px;
+    position: absolute;
+}
+
+#social-media > i {
+    margin: 5px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1.5px solid whitesmoke;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 780px) {
+    .main {
+        flex-direction: column;
+        min-width: auto;
+    }
+    
+    .mockup {
+        display: none;
+    }
+
+    .text-area {
+        text-align:  center;
+        margin: 0 auto;
+    }
+
+    #register {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    #logo > img {
+        width: 200px;
+        height: 40px;
+    }
+    .icons > i {
+        font-size: 12px;
+    }
+}
+
+
+@media only screen and (max-width: 375px) {
+    body {
+        background: url(../images/bg-mobile.svg) no-repeat;
+    }
+
+    .mockup {
+        display: inherit;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    #register {
+        width: 90%;
+    }
+
+    .attribution ,p, a{
+        font-size: 11px;
+    }
+
+    .icons {
+        position: relative;
+        right: auto;
+        text-align: center;
+    }
+
+  }
